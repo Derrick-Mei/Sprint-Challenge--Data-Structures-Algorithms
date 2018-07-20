@@ -26,10 +26,19 @@ def biggest_difference(arr):
 
 ```python
 def will_it_break(floorLevels, criticalLevel):
+    brokenEggs = 0
+    tries = 0
     if floorLevels > criticalLevel:
+        brokenEggs += 1
+        tries += 1
+
+        will_it_break(floorLevels/2, criticalLevel)
+    if floorLevels < criticalLevel:
+        tries += 1
+        will_it_break((floorLevels+(floorLevels/2))/2, criticalLevel)
+    if floorLevels == criticalLevel:
+        return brokenEggs
         
-    while floorLevels > criticalLevel:
-        floorLevels / 2
 ```
 
 Basically test the egg at top level.  If it breaks, test at middle.  This would elimintate half the choices. Then keep testing at the halfway points until you get 2 remaining.  Log time complexity
