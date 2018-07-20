@@ -1,12 +1,16 @@
 Add your answers to the questions below.
 
 1. What is the runtime complexity of your `depth_first_for_each` method?
+    1. O(n) - as the size grows, the complexity grows at a constant rate
 
 2. What is the space complexity of your `depth_first_for_each` function?
+    1. O(1) - as the size grows, the space required does not grow
 
 3. What is the runtime complexity of your `breadth_first_for_each` method?
+    1. O(n)
 
 4. What is the space complexity of your `breadth_first_for_each` method?
+    1. O(n)
 
 5. What is the runtime complexity of your `heapsort` function?
 
